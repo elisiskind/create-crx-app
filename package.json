@@ -1,0 +1,30 @@
+{
+  "name": "cx",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "esbuild": "^0.17.15",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "ora": "^6.3.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "workspaces": [
+    "scripts",
+    "create-app"
+  ],
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  }
+}

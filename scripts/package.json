@@ -1,0 +1,32 @@
+{
+  "name": "@crx/scripts",
+  "version": "0.0.1",
+  "description": "Scripts for building a chrome extension made with @cx/create-app",
+  "dependencies": {
+    "@types/chrome": "^0.0.228",
+    "@types/node": "^18.15.11",
+    "@types/node-rsa": "^1.1.1",
+    "chalk": "4.1.2",
+    "cmd-ts": "^0.12.1",
+    "esbuild": "^0.17.15",
+    "esbuild-runner": "^2.2.2",
+    "node-rsa": "^1.1.1",
+    "ora": "^6.3.0"
+  },
+  "bin": {
+    "crx-scripts": "bin/index.js"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outdir=bin --platform=node --external:esbuild"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+    },
+    "env": {
+      "node": true,
+      "commonjs": true
+    }
+  }
+}

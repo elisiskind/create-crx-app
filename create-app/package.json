@@ -1,0 +1,32 @@
+{
+  "name": "@crx/create-app",
+  "version": "0.0.1",
+  "description": "Creates a MV3 Chrome extension using Typescript and React, using ESBuild as the build tool.",
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "chalk": "4.1.2",
+    "cmd-ts": "^0.12.1",
+    "esbuild": "^0.17.15",
+    "esbuild-runner": "^2.2.2",
+    "ora": "^6.3.0"
+  },
+  "bin": {
+    "create-crx-app": "bin/index.js"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outdir=bin --platform=node"
+  },
+  "eslintConfig": {
+    "ignorePatterns": [
+      "template/**/*.tsx"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+    },
+    "env": {
+      "node": true,
+      "commonjs": true
+    }
+  }
+}

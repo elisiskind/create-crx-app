@@ -1,0 +1,45 @@
+{
+  "entryPoints": {
+    "contentScripts": [
+      {
+        "matches": [
+          "https://*.google.com/*"
+        ],
+        "location": "content/index.tsx",
+        "staticDir": "static"
+      }
+    ],
+    "backgroundScript": "background/index.ts",
+    "popup": "popup/index.tsx",
+    "additionalScripts": {
+      "onReinstall": {
+        "location": "install-page/index.tsx",
+        "matches": [
+          "https://*.google.com/*"
+        ]
+      }
+    }
+  },
+  "buildOptions": {
+    "fontExtensions": [
+      "ttf"
+    ],
+    "outputDir": "dist",
+    "sourceRoot": "src"
+  },
+  "manifest": {
+    "name": "Chrome extension made with Create CRX App",
+    "description": "Your description goes here",
+    "version": "0.0.1",
+    "version_name": "Development build",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://*.google.com/*"
+    ]
+  }
+}

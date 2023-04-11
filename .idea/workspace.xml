@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0827803-4ab9-45e7-86e1-6ec433c6d9cd" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O9NBO4oPAoqTMAONPZgwNc2Kbn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/eli/Code/create-crx-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "yarn:package.json:prettier",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "yarn:package.json:typescript",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/create-app/src" />
+      <recent name="$PROJECT_DIR$/cx/src/static" />
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/cx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/create-app/template" />
+      <recent name="$PROJECT_DIR$/create-app" />
+      <recent name="$PROJECT_DIR$/cx/src/static/fonts" />
+      <recent name="$PROJECT_DIR$/scripts/src" />
+      <recent name="$PROJECT_DIR$/cx/src/static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Shell Script.Build">
+    <configuration name="Build" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="yarn workspaces foreach run build" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="false" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build create-app" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/create-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build scripts" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/scripts/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.build scripts" />
+      <item itemvalue="npm.build create-app" />
+      <item itemvalue="Shell Script.Build" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0827803-4ab9-45e7-86e1-6ec433c6d9cd" name="Changes" comment="" />
+      <created>1680968702007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680968702007</updated>
+      <workItem from="1680968703019" duration="11726000" />
+      <workItem from="1680981279592" duration="1234000" />
+      <workItem from="1680982524625" duration="785000" />
+      <workItem from="1680983320042" duration="3168000" />
+      <workItem from="1680986507033" duration="17307000" />
+      <workItem from="1681075476317" duration="13678000" />
+      <workItem from="1681091110039" duration="4655000" />
+      <workItem from="1681139511874" duration="17703000" />
+      <workItem from="1681175011330" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="includedJSSourcePackages">
+      <set>
+        <option value="esbuild" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>

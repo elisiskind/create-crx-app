@@ -1,0 +1,40 @@
+.crx-App {
+  display: flex !important;
+  position: fixed !important;
+  justify-content: center !important;
+  z-index: 10000 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  align-items: center !important;
+  background-color: #05090f80;
+  cursor: pointer;
+}
+
+.crx-Content {
+  cursor: default;
+  display: flex !important;
+  background-color: #192e4d !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 16px !important;
+  font-family: Open Sans !important;
+  color: #e9fff9 !important;
+  padding: 36px !important;
+  border-radius: 8px !important;
+}
+
+.crx-Button {
+  padding: 16px;
+  background-color: #467599 !important;
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.crx-Button:hover {
+  background-color: #406b8c !important;
+}
+
+.crx-Button:active {
+  background-color: #3a607e !important;
+}
