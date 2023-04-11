@@ -19,12 +19,7 @@ const refreshContentScript = async () => {
   }
 };
 
-chrome.runtime.onInstalled.addListener(async () => {
-  new EventSource("http://localhost:8000/esbuild").addEventListener(
-    "change",
-    refreshContentScript
-  );
-
+const addReinstallScript = async () => {
   for (const tab of await chrome.tabs.query({
     url: "https://*.google.com/*",
   })) {
@@ -40,4 +35,14 @@ chrome.runtime.onInstalled.addListener(async () => {
         });
     }
   }
+};
+
+chrome.runtime.onInstalled.addListener(async () => {
+  new EventSource("http://localhost:8000/esbuild").addEventListener(
+    "change",
+    () => {
+      refreshContentScript().catch();
+      addReinstallScript().catch();
+    }
+  );
 });

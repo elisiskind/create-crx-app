@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0827803-4ab9-45e7-86e1-6ec433c6d9cd" name="Changes" comment="" />
+    <list default="true" id="d0827803-4ab9-45e7-86e1-6ec433c6d9cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/create-app/template/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@esbuild-darwin-arm64-npm-0.17.15-7102908867-8.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-eslint-plugin-npm-5.57.1-edb802a87d-3ea842ef96.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-parser-npm-5.57.1-54fd96fe13-db61a12a67.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-scope-manager-npm-5.57.1-9378ae59c7-4f03d54372.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-type-utils-npm-5.57.1-3f21c4b9e2-06fab95315.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-types-npm-5.57.1-eeab4ee3d6-21789eb697.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-typescript-estree-npm-5.57.1-3142e8c5fc-bf96520f6d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-utils-npm-5.57.1-4d565a9c7c-12e55144c8.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@typescript-eslint-visitor-keys-npm-5.57.1-ebbf6e55ae-d187dfac04.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.17.15-92a377fdce-4e3640d7bc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/semver-npm-7.3.8-25a996cb4f-ba9c7cbbf2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-app/bin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/create-app/bin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/create-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-app/src/create-app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/create-app/src/create-app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-app/template/src/background/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/create-app/template/src/background/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/bin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/bin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,24 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/eli/Code/create-crx-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "yarn:package.json:prettier",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "yarn:package.json:typescript",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eli/Code/create-crx-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;yarn:package.json:prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;yarn:package.json:typescript&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/create-app/src" />
@@ -112,7 +135,7 @@
       <workItem from="1681075476317" duration="13678000" />
       <workItem from="1681091110039" duration="4655000" />
       <workItem from="1681139511874" duration="17703000" />
-      <workItem from="1681175011330" duration="10000" />
+      <workItem from="1681175011330" duration="3063000" />
     </task>
     <servers />
   </component>

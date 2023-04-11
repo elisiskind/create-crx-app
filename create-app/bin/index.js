@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
@@ -11093,6 +11094,7 @@ var mkdir = util.promisify(require("fs").mkdir);
 var readFile = util.promisify(require("fs").readFile);
 var writeFile = util.promisify(require("fs").writeFile);
 var deps = [
+  "@crx-tools/scripts",
   "esbuild",
   "eslint",
   "eslint-config-prettier",
@@ -11156,10 +11158,6 @@ var createPackageJson = (projectRoot) => __async(void 0, null, function* () {
       "plugin:@typescript-eslint/recommended"
     ]
   };
-  packageJson.resolutions = {
-    "@crx/scripts": "portal:/Users/eli/Code/cx-template/scripts"
-  };
-  packageJson.dependencies["@crx/scripts"] = "0.0.1";
   packageJson.scripts = {
     build: "crx-scripts build",
     setup: "crx-scripts setup",
@@ -11221,7 +11219,6 @@ var createApp = (name) => {
       yield createTsConfig(projectRoot);
       yield updateGitIgnore(projectRoot);
     }));
-    yield exec("yarn");
   });
   createAppTasks().then(() => Log.success(`Created new project: ${name}`)).catch((e) => {
     Log.error("Failed to create app", e);

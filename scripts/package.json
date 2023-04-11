@@ -1,6 +1,6 @@
 {
-  "name": "@crx/scripts",
-  "version": "0.0.1",
+  "name": "@crx-tools/scripts",
+  "version": "0.0.4",
   "description": "Scripts for building a chrome extension made with @cx/create-app",
   "dependencies": {
     "@types/chrome": "^0.0.228",
@@ -17,7 +17,7 @@
     "crx-scripts": "bin/index.js"
   },
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outdir=bin --platform=node --external:esbuild"
+    "build": "esbuild src/index.ts --bundle --outdir=bin --platform=node --external:esbuild --banner:js=\"#!/usr/bin/env node\""
   },
   "eslintConfig": {
     "parserOptions": {

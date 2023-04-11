@@ -13,6 +13,7 @@ const readFile = util.promisify(require("fs").readFile);
 const writeFile = util.promisify(require("fs").writeFile);
 
 const deps = [
+  "@crx-tools/scripts",
   "esbuild",
   "eslint",
   "eslint-config-prettier",
@@ -82,13 +83,6 @@ const createPackageJson = async (projectRoot: string) => {
     ],
   };
 
-  // Take out these lines before publishing:
-  packageJson.resolutions = {
-    "@crx/scripts": "portal:/Users/eli/Code/cx-template/scripts",
-  };
-
-  packageJson.dependencies["@crx/scripts"] = "0.0.1";
-
   packageJson.scripts = {
     build: "crx-scripts build",
     setup: "crx-scripts setup",
@@ -155,9 +149,6 @@ export const createApp = (name: string) => {
       await createTsConfig(projectRoot);
       await updateGitIgnore(projectRoot);
     });
-
-    // Remove this before publish
-    await exec("yarn");
   };
   createAppTasks()
     .then(() => Log.success(`Created new project: ${name}`))
