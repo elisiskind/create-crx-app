@@ -1,4 +1,5 @@
 import * as esbuild from "esbuild";
+import { BuildResult, PartialMessage } from "esbuild";
 import { cpSync, existsSync, readFileSync, rmSync, writeFileSync } from "fs";
 import { Log } from "./script-logging";
 import "node-rsa";
@@ -172,8 +173,8 @@ const getBuildOptions = (config: Config, sourceDir: string, keys: Keys) => {
     {
       name: "post-build",
       setup(build: any) {
-        build.onEnd(() => {
-          writePopup(config);
+        build.onEnd((result: BuildResult) => {
+          writePopup(config, result.errors);
           writeManifest(keys, config);
           copyStaticFiles(sourceDir, config);
           if (config.buildOptions.postBuildScript) {
@@ -188,19 +189,37 @@ const getBuildOptions = (config: Config, sourceDir: string, keys: Keys) => {
   return buildOptions;
 };
 
-const writePopup = ({ entryPoints, buildOptions: { outputDir } }: Config) => {
-  if (entryPoints.popup)
-    writeFileSync(
-      resolve(outputDir, "popup.html"),
-      `<html>
+const writePopup = (
+  { entryPoints, buildOptions: { outputDir } }: Config,
+  errors: PartialMessage[]
+) => {
+  try {
+    if (entryPoints.popup) {
+      const cssFile = `popup.css`;
+      const cssFileExists = existsSync(resolve(outputDir, cssFile));
+      writeFileSync(
+        resolve(outputDir, "popup.html"),
+        `<html>
 <head>
     <script src="/popup.js" defer ></script>
+    ${
+      cssFileExists
+        ? `<link rel="stylesheet" type="text/css" href="/${cssFile}">`
+        : ""
+    }
 </head>
 <body>
     <div id="root"></div>
 </body>
 </html>`
-    );
+      );
+    }
+  } catch (e) {
+    errors.push({
+      text: "Failed to write popup.html",
+      detail: e,
+    });
+  }
 };
 
 const copyStaticFiles = (
